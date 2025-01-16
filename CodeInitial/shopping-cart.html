@@ -1,0 +1,101 @@
+<!-- Adel Bouhamed Iyed Berriri ET Yanis Charikhi-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    
+    <a href ="index.html">
+       <img src = "/assets/img/logo.svg" id="logo" alt="Logo du Site">
+    </a>
+    <nav>
+    <ul id="navigation">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="products.html">Produits</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="shopping-cart" href="./shopping-cart.html" title="Panier" style="position: relative;">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x"></i>
+        </span>
+        <span class="count">3</span>
+      </a></li>
+    </ul>
+  </nav>
+  
+  </header>
+
+
+  <h1>Panier d'achats</h1>
+
+  <!-- Tableau du panier -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nom du produit</th>
+        <th>Prix unitaire</th>
+        <th>Quantité</th>
+        <th>Prix total</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Ligne 1 - Produit 1 -->
+      <tr>
+        <td><a href="assets/img/apple-tv.png">Apple TV</a></td>
+        <td>249.99 $</td>
+        <td>1</td>
+        <td>249.99 $</td>
+        <td>
+          <button>-</button>
+          <button>+</button>
+          <button>X</button>
+        </td>
+      </tr>
+      <!-- Ligne 2 - Produit 2 -->
+      <tr>
+        <td><a href="assets/img/camera-1.png">Canon EOS 5D Mark II</a></td>
+        <td>2999.99 $</td>
+        <td>2</td>
+        <td>5999.98 $</td>
+        <td>
+          <button>-</button>
+          <button>+</button>
+          <button>X</button>
+        </td>
+      </tr>
+      <!-- Ligne 3 - Produit 3 -->
+      <tr>
+        <td><a href="assets/img/camera-2.png">Nikon D7000</a></td>
+        <td>549.99 $</td>
+        <td>1</td>
+        <td>549.99 $</td>
+        <td>
+          <button>-</button>
+          <button>+</button>
+          <button>X</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Total du panier -->
+  <h2>Total : 6799.96 $</h2>
+
+  <!-- Boutons supplémentaires -->
+  <button onclick="alert('Panier vidé !')">Vider le panier</button>
+  <a href="order.html">
+    <button>Commander</button>
+  </a>
+
+<footer>
+  <p> Adel <strong> BOUA74270301</strong></strnog> Iyed <strong>BERI85300401</strong>  Yanis <strong>CHAY77330401
+  </strong></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!-- Adel Bouhamed Iyed Berriri ET Yanis Charikhi-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Commande</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <a href="./index.html">
+      <img alt="logo" src="./assets/img/logo.svg" id="logo" title="Accueil">
+    </a>
+  <nav>
+      <ul id="navigation">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./products.html">Produits</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a class="shopping-cart" href="./shopping-cart.html" style="position:relative;" title="Panier">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-shopping-cart fa-stack-1x"></i>
+          </span>
+          <span class="count">3</span>
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>FORMULAIRE</h1>
+
+  <!-- Formulaire principal -->
+  <form action="confirmation.html" method="post">
+    <!-- Section Informations de Contact -->
+    <fieldset>
+      <legend>Informations de Contact</legend>
+      <label for="firstname">Prénom :</label>
+      <input type="text" id="firstname" name="prenom" placeholder="Votre prénom" required>
+      <br>
+      <label for="lastname">Nom :</label>
+      <input type="text" id="lastname" name="nom" placeholder="Votre nom" required>
+      <br>
+      <label for="email">Email :</label>
+      <!--Format de HTML5 avec le id="email"-->
+      <input type="email" id="email" name="email" placeholder="Votre adresse courriel" required>
+      <br>
+      <label for="phone">Téléphone :</label>
+      <!--Format de HTML5 avec le id="phone"-->
+      <input type="tel" id="phone" name="telephone" placeholder="Votre numéro de téléphone" pattern="[0-9]{10}" required>
+    </fieldset>
+
+    <!-- Section Paiement -->
+    <fieldset>
+      <legend>Paiement</legend>
+      <label for="creditcard">Numéro de carte de crédit :</label>
+      <!-- Le pattern [0-9]{16} c'est pour indiquer le bon nombre de chiffre a mettre-->
+      <input type="text" id="creditcard" name="creditcard" placeholder="Numéro de carte de crédit" pattern="[0-9]{16}" required>
+      <br>
+      <label for="creditcardexpiry">Date d'expiration de la carte :</label>
+      <input type="month" id="creditcardexpiry" name="creditcardexpiry" required>
+    </fieldset>
+
+    <!-- Bouton de soumission -->
+    <button type="submit">Appuyer pour envoyer</button>
+  </form>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>
+      Adel <strong>BOUA74270301</strong>, Iyed <strong>BERI85300401</strong>, Yanis <strong>CHAY77330401</strong>
+    </p>
+  </footer>
+
+</body>
+</html>

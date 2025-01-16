@@ -1,0 +1,135 @@
+<!-- Adel Bouhamed Iyed Berriri ET Yanis Charikhi-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Produits</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <a href ="index.html">
+       <img src = "/assets/img/logo.svg" id="logo" alt="Logo du Site">
+    </a>
+    <nav>
+    <ul id="navigation">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="products.html" class="active">Produits</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="shopping-cart" href="./shopping-cart.html" style="position:relative;" title="Panier">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-shopping-cart fa-stack-1x"></i>
+        </span>
+        <span class="count">3</span>
+      </a></li>
+    </ul>
+  </nav>
+  
+  </header>
+  
+  <div id="main-content">
+    <p id="products-count"></p> <!-- Nombre de produits affichés -->
+    <div id="products-list"></div> <!-- Liste des produits -->
+  </div>
+
+  <script src="/data/products.json"></script>
+
+  <div id="main"> 
+
+  <div id="barre-laterales"> 
+    <div id="categories-section">
+    <h3> Catégories</h3>
+    <div id="product-categories">
+      
+      <button onclick="alert('Appareil photo')">Appareil photo</button>
+      <br>
+      <button onclick="alert('Consoles')">Consoles</button>
+      <br>
+      <button onclick="alert('Écrans')">Écrans</button>
+      <br>
+      <button onclick="alert('Ordinateurs')">Ordinateurs</button>
+      <br>
+      <button onclick="alert('Tous les produits')">Tous les produits</button>
+</div>
+    </div>
+    <div id="classement-section">
+    <h3> Classement</h3>
+    <div id ="productcriteria">
+      <button onclick="alert('Prix (bas-haut)')">Prix (bas-haut)</button>
+      <br>
+      <button onclick="alert('Prix (haut-bas)')">Prix (haut-bas)</button>
+      <br>
+      <button onclick="alert('Nom(A-Z)')">Nom(A-Z)</button>
+      <br>
+      <button onclick="alert('Nom(Z-A)')">Nom(Z-A)</button>
+    </div>
+  </div>
+  </div>
+  
+  <div id="panneau">
+    <h1>Produits</h1>
+    <p id="products-count">6 produits</p> <!-- Nombre de produits affichés -->
+    <div id="products-list">
+
+      <div class="product">
+        
+    <a href="product.html" >
+        <h2>Apple TV</h2>
+        <img src="/assets/img/apple-tv.png" alt="Apple TV" >
+        <p>249.99 $</p>
+      </div>
+    </a>
+    <!-- Produit 2 -->
+    <div class="product">
+
+    <a href="product.html">
+        <h2>Canon EOS 5D Mark II</h2>
+        <img src="/assets/img/camera-1.png" alt="Canon EOS 5D Mark II" >
+        <p>2999.99 $</p>
+      </div>
+    </a>
+    <!-- Produit 3 -->
+    <div class="product">
+    <a href="product.html">
+        <h2>Nikon D7000</h2>
+        <img src="/assets/img/camera-2.png" alt="Nikon D7000">
+        <p>549.99 $</p>
+      </div>
+    </a>
+    <!-- Produit 4 -->
+    <div class="product">
+    <a href="product.html">
+        <h2>Canon PowerShot SD1300</h2>
+        <img src="/assets/img/camera-3.png" alt="Canon PowerShot SD1300" >
+        <p>299.99 $</p>
+      </div>
+    </a>
+    <!-- Produit 5 -->
+    <div class="product">
+    <a href="product.html">
+        <h2>Portable</h2>
+        <img src="/assets/img/laptop-1.png" alt="Portable">
+        <p>699.99 $</p>
+      </div>
+    </a>
+    <!-- Produit 6 -->
+    <div class="product">
+    <a href="product.html">
+        <h2>Portable professionnel</h2>
+        <img src="/assets/img/laptop-2.png" alt="Portable professionnel">
+        <p>599.99 $</p>
+      </div>
+    </a>
+  </div>
+  </div>
+  </div>
+
+  <footer>
+    <p> Adel <strong> BOUA74270301</strong></strnog> Iyed <strong>BERI85300401</strong>  Yanis <strong>CHAY77330401
+    </strong></p>
+  </footer>
+
+</body>
+</html>
